@@ -215,6 +215,3 @@ target_link_libraries(task_1 ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
 
 add_executable(task_1_answer src/task_1_answer.cpp)
 target_link_libraries(task_1_answer ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
-
-add_executable(task_2 src/task_2.cpp)
-target_link_libraries(task_2 ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
