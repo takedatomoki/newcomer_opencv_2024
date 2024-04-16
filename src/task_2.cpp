@@ -90,14 +90,13 @@ int main() {
             threshold(diff, mask, 50, 255, THRESH_BINARY);
 
             // 検出された物体に色を重ねる処理
-            frame.setTo(Scalar(0, 0, 255), mask); // 赤色を付ける (HSV空間での赤色)
+            frame.setTo(Scalar(0, 0, 255), mask); // 赤色を付ける 
         }
 
         // 手が画角から出たかどうかの判定
         if (handEnteredFrame) {
             // HSV色空間に変換
             cvtColor(frame, frame, COLOR_BGR2HSV);
-            // 手が画角から出た場合に背景差分を行うためのフラグをリセット
             Mat whitePixels;
             inRange(frame, Scalar(5, 100, 100), Scalar(15, 255, 255), whitePixels); // 二値化された白ピクセルのマスク
             cvtColor(frame, frame, COLOR_HSV2BGR);
