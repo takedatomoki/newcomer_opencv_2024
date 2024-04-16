@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(newcomer_training_2024)
+project(newcomer_opencv_2024)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -127,7 +127,7 @@ include_directories(
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/newcomer_training_2024.cpp
+#   src/${PROJECT_NAME}/newcomer_opencv_2024.cpp
 # )
 
 ## Add cmake target dependencies of the library
